@@ -1,0 +1,41 @@
+<html>
+
+
+<script>
+
+
+str="aabbc";
+Counter=2;
+k_count=1;
+j=0;
+
+while(j<str.length)
+{
+console.log("arun");
+
+	for(i=j;i<str.length;i++)
+	{
+		if(k_count<Counter)
+		{
+			console.log(k_count+" for iter j:"+j+" with i:"+i+"is: "+str.substr(0,i+1));
+			k_count++;
+		}
+		else if(k_count==Counter)
+		{
+			console.log(k_count+" for iter j:"+j+" with i:"+i+"is: "+str.substr(i,i+1));
+			k_count++;
+		}
+		else
+		{
+			console.log(k_count+" for iter j:"+j+" with i:"+i+"is: "+str.substr(i,i+1));
+			k_count=1;
+			j++;
+			break;
+		}
+	}
+
+//j++;
+}
+</script>
+
+</html>
