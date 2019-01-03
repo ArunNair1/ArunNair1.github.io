@@ -14,13 +14,18 @@
 	</head>
 	<body>
 		<h1>This is a testPage</h1>
-		<a href="test.html" onclick="ga('send', 'event', 'button', 'click', 'nav buttons', 4);">Go to test</a>
+		<a href="test.html" onclick="test()">Go to test</a>
 		
 		<script>
 			function test()
 			{
-				alert("hello");
-			ga('send', 'event', 'btnclick', 'click');
+				label="https://arunnair1.github.io/test.html";
+				alert(label);
+			 ga('send', 'event', 'Link Clicked', 'Click Details', label, {
+      'hitCallback': function(){
+        window.location.href = label;
+      }
+    });
 
 			}
 		</script>
