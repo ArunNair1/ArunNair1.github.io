@@ -14,7 +14,15 @@
 	</head>
 	<body>
 		<h1>This is a testPage</h1>
-		<a href="test.html">Go to test</a>
+		<a href="test.html" onclick="test()">Go to test</a>
+		
+		<script>
+			function test()
+			{
+			ga('send', 'event', 'btnclick', 'click');
+
+			}
+		</script>
 	</body>
 
 
