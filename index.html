@@ -23,6 +23,7 @@
 				alert(label);
 			 ga('send', 'event', 'Link Clicked', 'Click Details', label, {
       'hitCallback': function(){
+	      console.log("reached here");
         window.location.href = label;
       }
     });
